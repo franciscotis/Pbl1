@@ -1,8 +1,9 @@
 class Node
   attr_accessor :item, :next
-  def initialize(item,next)
+
+  def initialize(item,prox)
     @item = item
-    @next = next
+    @next = prox
   end
 
 

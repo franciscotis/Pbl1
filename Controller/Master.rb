@@ -1,6 +1,6 @@
 class Controller
   attr_accessor :lista
-  require File.expand_path("Pbl1/Controller/Require")
+  require File.expand_path("Pbl1/Controller/Importacao")
 
   lista = Lista.new()
 
@@ -11,7 +11,7 @@ class Controller
   def mostralista()
     iterador = lista.iterador()
     while(iterador.hasnext())
-      tt = iterador.next()
+      tt = iterador.prox()
       tt.to_s
     end
   end

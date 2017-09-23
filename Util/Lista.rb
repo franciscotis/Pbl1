@@ -5,12 +5,12 @@ class Lista
     @tale = nil
   end
   def adiciona(val)
-    current = Node.new(val,nil)
+    @current = Node.new(val,nil)
   end
   if @head == nil
-  @head = @tale = current
+  @head = @tale = @current
   else
-    @tale.next = current
+    @tale.prox = @current
   end
 
   def iterator()

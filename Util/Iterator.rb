@@ -5,7 +5,7 @@ class Iterator
   end
 
   def hasnext()
-    if first.next!=nil
+    if first.prox!=nil
       return true
     end
     return false
