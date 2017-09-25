@@ -1,16 +1,20 @@
 class Lista
 
   def initialize()
-    @head = nil
-    @tale = nil
+    @head = Node.new(nil,nil)
+    @tale = Node.new(nil,nil)
   end
+
   def adiciona(val)
-    @current = Node.new(val,nil)
-  end
-  if @head == nil
-  @head = @tale = @current
-  else
-    @tale.prox = @current
+    @current = :: Node.new(val,nil)
+
+    if @head == nil
+      @head = @tale = @current
+      @head.prox = @tale.prox = nil
+    else
+      @current.prox = @tale
+      @tale.prox = nil
+    end
   end
 
   def iterator()

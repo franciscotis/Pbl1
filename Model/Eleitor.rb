@@ -10,4 +10,8 @@ class Eleitor
 
   end
 
+  def to_s
+    puts nome,titulo,nomemae,nomepai,datanasc,telefone
+  end
+
 end
