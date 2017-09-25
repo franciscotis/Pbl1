@@ -1,12 +1,10 @@
+require "../Controller/Master"
+
 class Principal
-  require File.expand_path("../../Pbl1/Controller/Importacao")
+  print("hi\n")
 
-  controller = Controller.new()
-
-  print("hi")
-
-
-
-
+  controller = :: Master.new
+  
 
 end
+

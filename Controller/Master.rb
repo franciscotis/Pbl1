@@ -1,8 +1,9 @@
-class Controller
+class Master
   attr_accessor :lista
-  require File.expand_path("Pbl1/Controller/Importacao")
+  require "../Controller/Importacao"
 
   lista = Lista.new()
+
 
   def addlista(eleitor)
     lista.adiciona(eleitor)
@@ -14,6 +15,10 @@ class Controller
       tt = iterador.prox()
       tt.to_s
     end
+  end
+
+  def sayhi()
+    print("hello there friends")
   end
 
 end

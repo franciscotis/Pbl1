@@ -6,7 +6,7 @@ class Importacao
   require File.expand_path('../Util/Iterator')
   require File.expand_path('../Util/Lista')
   require File.expand_path('../Util/Node')
-  require File.expand_path('Controller/Master')
+
 
 
 
