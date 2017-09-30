@@ -1,12 +1,15 @@
+require "../Util/Node"
+require "../Model/Eleitor"
+require "../Util/Iterator"
 class Lista
 
   def initialize()
-    @head = Node.new(nil,nil)
-    @tale = Node.new(nil,nil)
+    @head = nil
+    @tale = nil
   end
 
   def adiciona(val)
-    @current = :: Node.new(val,nil)
+    @current =  Node.new(val,nil)
 
     if @head == nil
       @head = @tale = @current

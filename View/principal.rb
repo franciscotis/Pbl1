@@ -8,6 +8,7 @@ class Principal
   eleitor1 = :: Eleitor.new("Francisco","123321","Maria","Fabio","10/09/1998","999")
 
   controller.addlista(eleitor1)
+  controller.mostralista()
 
 end
 

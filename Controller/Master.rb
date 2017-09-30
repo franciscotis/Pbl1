@@ -1,16 +1,18 @@
+require "../Controller/Importacao"
+
 class Master
   attr_accessor :lista
-  require "../Controller/Importacao"
 
-  lista = Lista.new()
-
+  def initialize
+    @lista = Lista.new()
+  end
 
   def addlista(eleitor)
     lista.adiciona(eleitor)
   end
 
   def mostralista()
-    iterador = lista.iterador()
+    iterador = @lista.iterator()
     while(iterador.hasnext())
       tt = iterador.prox()
       tt.to_s
